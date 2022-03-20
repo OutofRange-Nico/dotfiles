@@ -1,0 +1,63 @@
+#
+# wm independent hotkeys
+#
+
+# reloads sxhkd configuration:
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# Launch Terminal
+super + Return
+    terminal
+
+# Floating Alacritty Terminal
+super + shift + Return
+    terminal -f
+
+# Fullscreen Alacritty Terminal
+super + shift + t
+    terminal -m
+
+# j4 dmenu
+alt + F1
+    rofi -show drun 
+
+# Launch Menus
+super + {x,n,d,s}
+    {powermenu,def-nmdmenu,rofi -show run,def-ssdmenu}
+
+# Lock Screen
+ctrl + alt + l
+    lock
+
+# custom dmenu scripts
+alt + {e,l}
+    {edit-configs, quick-links}
+
+# Launch Applications
+super + shift + {f,w,r,d,s}
+    {thunar,firefox,terminal -e ranger,discord,spotify}
+
+# Volume controls
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+    volume{ --up, --down, --toggle}
+
+# Launch pavucontrol
+ctrl + F12
+  pavucontrol
+
+# Brightness controls
+XF86MonBrightness{Up,Down}
+    brightness{ --up, --down}
+
+# screenshot
+Print
+    flameshot gui
+
+# screenshot active window
+#ctrl + Print
+#    takeshot --win
+
+# screenshot selected area
+#ctrl + shift + Print
+#    takeshot --area
