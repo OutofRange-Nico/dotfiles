@@ -6,6 +6,8 @@ local opts = {
 
 keymap("n", "<c-s>", ":w<CR>", {})
 keymap("i", "<c-s>", "<Esc>:w<CR>a", {})
+keymap("n", "<space>q", ":wq!<CR>", {})
+keymap("n", "<space>f", ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
 
 -- NvimTree
 keymap("n", "<F2>", ":NvimTreeToggle<CR>", opts)

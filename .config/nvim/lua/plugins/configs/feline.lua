@@ -1,5 +1,5 @@
 local feline = require("feline")
 
-feline.setup{
+feline.setup {
   components = require("catppuccin.core.integrations.feline")
 }

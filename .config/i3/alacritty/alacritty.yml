@@ -10,7 +10,7 @@ import:
 
 ## Set environment variables
 env:
-  TERM: alacritty
+  TERM: xterm-256color
 
 ## Terminal window settings
 window:

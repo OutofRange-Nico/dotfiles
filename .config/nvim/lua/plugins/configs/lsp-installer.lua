@@ -9,7 +9,6 @@ local capa = vim.lsp.protocol.make_client_capabilities()
 capa = require("cmp_nvim_lsp").update_capabilities(capa)
 
 local function on_attach(client, bufnr)
-  vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
 lsp_installer.on_server_ready(function(server)

@@ -3,17 +3,21 @@ require("plugins.configs.dashboard")
 require("plugins.configs.treesitter")
 require("plugins.configs.lsp-installer")
 require("plugins.configs.nvim-tree")
-require("plugins.configs.feline")
 require("plugins.configs.presence")
 require("plugins.configs.cmp")
 require("plugins.configs.which-key")
 require("plugins.configs.autopairs")
 require("plugins.configs.toggleterm")
 require("plugins.configs.rust-tools")
+require("plugins.configs.fidget")
+
+require("wlsample.bubble")
 
 local packer = require("packer")
 
 packer.startup(function()
+  use "windwp/windline.nvim"
+  use "j-hui/fidget.nvim"
   use "jdhao/better-escape.vim"
   use "wbthomason/packer.nvim"
   use {
